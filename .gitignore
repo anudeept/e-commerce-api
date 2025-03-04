@@ -1,0 +1,69 @@
+# Ignore Gradle build files
+.gradle/
+build/
+out/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore temporary files
+*.swp
+*.swo
+*.swn
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Maven wrapper
+mvnw*
+.mvn/
+
+# Ignore Gradle wrapper
+gradlew
+gradlew.bat
+
+# Ignore compiled Java classes
+bin/
+target/
+*.class
+
+# Ignore dependency cache
+**/node_modules/
+**/.mvn/
+**/.gradle/
+
+# Ignore Spring Boot properties
+application*.yml
+application*.yaml
+application*.properties
+.env
+config/
+
+# Ignore database files
+*.db
+*.sql
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore generated files
+*.jar
+*.war
+*.ear
+
+# Ignore test reports
+test-results/
+surefire-reports/
+jacoco/
+
+# Ignore Docker files
+docker-compose.override.yml
