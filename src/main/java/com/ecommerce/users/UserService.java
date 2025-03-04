@@ -1,11 +1,9 @@
 package com.ecommerce.users;
 
-import com.ecommerce.shoppingcart.ShoppingCartEntity;
 import com.ecommerce.shoppingcart.ShoppingCartRepository;
 import com.ecommerce.users.dto.UserPartialUpdateDto;
 import com.ecommerce.users.dto.UserRequestDto;
 import com.ecommerce.users.dto.UserResponseDto;
-import java.util.EnumSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,8 +20,6 @@ public class UserService {
   @Autowired private ShoppingCartRepository cartRepository;
 
   @Autowired private PasswordEncoder passwordEncoder;
-
- 
 
   public UserEntity getUserById(String id) {
     return userRepository

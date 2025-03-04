@@ -8,10 +8,7 @@ import com.ecommerce.users.UserEntity;
 import com.ecommerce.users.UserRepository;
 import com.ecommerce.users.dto.UserRequestDto;
 import com.ecommerce.users.dto.UserResponseDto;
-
-import java.util.Collections;
 import java.util.EnumSet;
-
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -45,6 +42,7 @@ public class AuthService {
 
     return tokenProvider.generateToken(authentication);
   }
+
   public UserResponseDto registerUser(UserRequestDto user) {
     // Email validation
     if (userRepository.existsByEmail(user.getEmail())) {

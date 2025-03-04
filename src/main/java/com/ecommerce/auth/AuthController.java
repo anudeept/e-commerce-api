@@ -4,10 +4,8 @@ import com.ecommerce.auth.dto.JwtAuthResponse;
 import com.ecommerce.auth.dto.LoginRequest;
 import com.ecommerce.auth.dto.MessageResponse;
 import com.ecommerce.security.JwtTokenProvider;
-import com.ecommerce.users.UserEntity;
 import com.ecommerce.users.dto.UserRequestDto;
 import com.ecommerce.users.dto.UserResponseDto;
-
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

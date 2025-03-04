@@ -45,7 +45,6 @@ application*.yml
 application*.yaml
 application*.properties
 .env
-config/
 
 # Ignore database files
 *.db

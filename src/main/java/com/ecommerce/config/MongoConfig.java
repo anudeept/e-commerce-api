@@ -23,7 +23,6 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
   @Value("${spring.data.mongodb.database}")
   private String database;
 
-
   @Override
   protected String getDatabaseName() {
     return database;
@@ -35,11 +34,10 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
         new ConnectionString(
             String.format(
                 "mongodb://%s:%s/%s",
-                host,    // hostname
-                port,    // port
+                host, // hostname
+                port, // port
                 database // database name
-            )
-        );
+                ));
 
     MongoClientSettings mongoClientSettings =
         MongoClientSettings.builder()
