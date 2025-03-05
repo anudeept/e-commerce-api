@@ -108,9 +108,8 @@ Above command will return a JWT token. Use the JWT token to access the protected
 - **Products**: `/api/v1/ecommerce/products/*`
   - Product CRUD operations (requires ADMIN or STAFF role)
 - **Cart**: `/api/v1/ecommerce/shopping-cart/*`
-  - Shopping cart management
-- **Orders**: `/api/v1/ecommerce/orders/*`
-  - Order processing and management
+  - Shopping cart  CRUD operations (requires ADMIN or CUSTOMER role)
+
 
 ## Integration Testing
 
